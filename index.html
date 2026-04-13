@@ -1,1 +1,357 @@
-Vincenza Online!
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Vincenza Lochi - Guida Escursionistica Lucca, Toscana</title>
+  <meta name="description" content="Vivi la Toscana più autentica tra lago e canneti. Escursioni, barchino e attività nella natura con guida locale esperta.">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#a1d494",
+            "secondary": "#00677e",
+            "surface-container-low": "#f5f3ef",
+            "on-secondary-fixed": "#001f28",
+            "surface-container-high": "#eae8e4",
+            "tertiary": "#6a5e33",
+            "on-surface": "#1b1c1a",
+            "inverse-on-surface": "#f2f0ed",
+            "inverse-surface": "#30312e",
+            "surface-bright": "#fbf9f5",
+            "secondary-fixed-dim": "#7cd2ef",
+            "on-secondary-fixed-variant": "#004e60",
+            "primary": "#154212",
+            "error": "#ba1a1a",
+            "surface": "#fbf9f5",
+            "on-primary-container": "#9dd090",
+            "surface-container-lowest": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "tertiary-fixed": "#f3e2ac",
+            "on-tertiary-fixed-variant": "#51461e",
+            "tertiary-container": "#baaa79",
+            "background": "#fbf9f5",
+            "primary-fixed": "#bcf0ae",
+            "primary-container": "#2d5a27",
+            "surface-tint": "#3b6934",
+            "on-tertiary-fixed": "#231b00",
+            "surface-dim": "#dbdad6",
+            "on-primary-fixed-variant": "#23501e",
+            "outline-variant": "#c2c9bb",
+            "surface-container-highest": "#e4e2de",
+            "on-error": "#ffffff",
+            "on-background": "#1b1c1a",
+            "on-secondary-container": "#00647a",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e4e2de",
+            "inverse-primary": "#a1d494",
+            "on-tertiary-container": "#493e17",
+            "tertiary-fixed-dim": "#d6c692",
+            "on-primary": "#ffffff",
+            "on-primary-fixed": "#002201",
+            "secondary-container": "#8be0fd",
+            "secondary-fixed": "#b5ebff",
+            "surface-container": "#efeeea",
+            "on-tertiary": "#ffffff",
+            "outline": "#72796e",
+            "on-surface-variant": "#42493e"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          fontFamily: {
+            headline: ["Newsreader"],
+            body: ["Manrope"],
+            label: ["Manrope"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .editorial-shadow {
+      box-shadow: 0 12px 32px rgba(27, 28, 26, 0.06);
+    }
+    .glass-nav {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-gradient {
+      background: linear-gradient(135deg, #154212, #2d5a27);
+    }
+    /* Smooth scroll offset for fixed nav */
+    [id] { scroll-margin-top: 90px; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+<!-- ═══════════════════════════════════════ NAV ═══════════════════════════════════════ -->
+<nav class="fixed top-0 w-full z-50 flex justify-center py-4 px-4">
+  <div class="max-w-5xl w-full glass-nav bg-stone-50/70 rounded-full shadow-xl shadow-stone-900/5 flex justify-between items-center px-8 py-3 transition-all duration-500 ease-in-out">
+    <div class="text-xl font-['Newsreader'] italic tracking-tight text-emerald-900">
+      Vincenza Lochi
+    </div>
+    <div class="hidden md:flex gap-8 items-center">
+      <a class="font-['Manrope'] text-xs tracking-widest uppercase text-stone-600 hover:text-emerald-700 transition-colors duration-500" href="#esperienze">Esperienze</a>
+      <a class="font-['Manrope'] text-xs tracking-widest uppercase text-stone-600 hover:text-emerald-700 transition-colors duration-500" href="#chi-sono">Chi Sono</a>
+      <a class="font-['Manrope'] text-xs tracking-widest uppercase text-stone-600 hover:text-emerald-700 transition-colors duration-500" href="#galleria">Galleria</a>
+      <a class="font-['Manrope'] text-xs tracking-widest uppercase text-stone-600 hover:text-emerald-700 transition-colors duration-500" href="#contatti">Contatti</a>
+    </div>
+    <a href="#contatti" class="bg-primary hover:bg-primary-container text-on-primary px-6 py-2 rounded-full font-['Manrope'] text-xs tracking-widest uppercase transition-all duration-300 transform hover:scale-105">
+      Prenota
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  <div class="absolute inset-0 z-0">
+    <img
+      alt="Lago di Massaciuccoli all'alba – nebbia sull'acqua e canneti verdi"
+      class="w-full h-full object-cover grayscale-[15%] brightness-90"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIIHYen1kIP9yZE5V7_W1cTBr8KEUNXEm3_9V7adBXIbeeZmHg1T6231IniKj3_RIYradh46xpRCDSnY-WrNuuEgWwWeXqi3BmFOMilUtDeaDBJIUZXhkHj8QpAjs5a5YmIrjuUsDP9ZcKHRnQ89A61RoIZFCjSSCFnujwdy5CzRLEXJPkaRW-G936KaG82RpP8xrzxZqtn6Qm3230UY35ClA1JzBozFA9zvVpmt6NlYBQnuaqqh2XxPMj4TeopzxLYscLGrIHk44"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-surface"></div>
+  </div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-8 text-center md:text-left">
+    <span class="inline-block font-label text-xs font-bold uppercase tracking-[0.2em] text-primary-container mb-4 opacity-90 drop-shadow">
+      Guida Escursionistica · Toscana
+    </span>
+    <h1 class="font-headline text-6xl md:text-8xl text-white drop-shadow-lg -tracking-[0.03em] leading-tight mb-8">
+      La Toscana <span class="italic">da vivere</span>,<br/>un passo alla volta.
+    </h1>
+    <p class="max-w-xl font-body text-lg text-white/90 drop-shadow leading-relaxed mb-12">
+      Sono una guida escursionistica con la passione per la natura toscana. Ti accompagno in uscite a piedi, in barca e sull'acqua — per scoprire paesaggi, storie e silenzi che non si trovano sulle mappe.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+      <a class="bg-primary text-on-primary px-10 py-4 rounded-lg font-label text-sm font-bold tracking-widest uppercase shadow-lg shadow-primary/30 hover:bg-primary-container transition-all duration-300" href="#esperienze">
+        Scopri le Esperienze
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ SERVICES ═══════════════════════════════════════ -->
+<section class="py-32 bg-surface" id="esperienze">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="mb-20 text-center">
+      <span class="font-label text-xs uppercase tracking-[0.2em] text-outline mb-2 block">Le mie proposte</span>
+      <h2 class="font-headline text-5xl text-primary">Esperienze Immersive</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+      <!-- ① Giro in Barchino (big card, left) -->
+      <div class="md:col-span-7 group relative rounded-xl overflow-hidden min-h-[460px]">
+        <img
+          alt="Giro in barchino sul lago di Massaciuccoli – barca piatta tra i canneti"
+          class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          src="/gallery/giro-in-barchino.jpg"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent group-hover:from-black/40 transition-colors duration-500"></div>
+        <div class="absolute bottom-0 left-0 p-12 text-white">
+          <span class="font-label text-xs uppercase tracking-widest mb-2 block opacity-80">Sul Lago</span>
+          <h3 class="font-headline text-4xl mb-4 italic">Giro in Barchino</h3>
+          <p class="font-body text-sm max-w-sm opacity-90 leading-relaxed mb-6">
+            Addentratevi in silenzio tra i canali e i canneti del lago di Massaciuccoli a bordo del tradizionale barchino da pesca. Un viaggio lento, come fanno i pescatori da secoli.
+          </p>
+          <span class="material-symbols-outlined text-3xl opacity-80 group-hover:translate-x-2 transition-transform duration-300">arrow_right_alt</span>
+        </div>
+      </div>
+
+      <!-- ② Escursioni (small card, right) -->
+      <div class="md:col-span-5 bg-surface-container-low rounded-xl p-10 flex flex-col justify-between">
+        <div>
+          <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-8">
+            <span class="material-symbols-outlined text-primary text-3xl">hiking</span>
+          </div>
+          <h3 class="font-headline text-3xl text-primary mb-4 italic">Escursioni Guidate</h3>
+          <p class="font-body text-on-surface-variant leading-relaxed">
+            Sentieri nascosti, flora endemica, uccelli rari da osservare in silenzio. Esploriamo insieme l'Oasi LIPU di Massaciuccoli e i dintorni — nessuna uscita assomiglia alla precedente.
+          </p>
+        </div>
+        <div class="mt-8 rounded-xl overflow-hidden h-48">
+          <img
+            alt="Escursionisti sul camminamento in legno tra i canneti dell'Oasi"
+            class="w-full h-full object-cover"
+            src="/gallery/escursioni.jpg"
+          />
+        </div>
+      </div>
+
+      <!-- ③ Laboratori Didattici (full-width card) -->
+      <div class="md:col-span-12 flex flex-col md:flex-row bg-surface-container-highest rounded-xl overflow-hidden">
+        <div class="md:w-1/2 p-12 flex flex-col justify-center">
+          <span class="font-label text-xs uppercase tracking-widest text-outline mb-2">Per le Scuole</span>
+          <h3 class="font-headline text-4xl text-primary mb-6 italic">Proposte Scolastiche</h3>
+          <p class="font-body text-on-surface-variant leading-relaxed mb-4">
+            Un programma completo pensato per le scuole primarie e secondarie, che unisce conoscenza, movimento e scoperta. Laboratori naturalistici, escursioni guidate nell'Oasi, giri in canoa e kayak sul lago, e uscite in battello per ripercorrere la storia e le tradizioni di queste acque.
+          </p>
+          <p class="font-body text-on-surface-variant leading-relaxed mb-8">
+            Ogni proposta è calibrata sull'età e sul ciclo scolastico, con la possibilità di combinare più attività in una stessa giornata.
+          </p>
+          <a href="#contatti" class="self-start text-primary font-label text-xs font-bold uppercase tracking-widest border-b border-primary/30 pb-1 hover:border-primary transition-all duration-300">
+            Scopri i programmi
+          </a>
+        </div>
+        <div class="md:w-1/2 relative h-64 md:h-auto">
+          <img
+            alt="Bambini con binocolo e lente d'ingrandimento in un laboratorio naturalistico all'aperto"
+            class="w-full h-full object-cover"
+            src="/gallery/proposte-scolastiche.jpg"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ ABOUT ═══════════════════════════════════════ -->
+<section class="py-32 bg-surface-container-low overflow-hidden" id="chi-sono">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="flex flex-col md:flex-row items-center gap-20">
+
+      <!-- Portrait -->
+      <div class="md:w-1/2 relative flex justify-center">
+        <div class="relative z-10 rounded-2xl overflow-hidden editorial-shadow transform -rotate-2 max-w-sm w-full">
+          <img
+            alt="Vincenza Lochi – guida naturalistica dell'Oasi Massaciuccoli"
+            class="w-full aspect-[4/5] object-cover"
+            src="/gallery/vincenza-lochi.jpg"
+          />
+        </div>
+        <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl z-0"></div>
+      </div>
+
+      <!-- Bio -->
+      <div class="md:w-1/2">
+        <span class="font-label text-xs uppercase tracking-[0.2em] text-outline mb-4 block">La voce dietro i sentieri</span>
+        <h2 class="font-headline text-5xl text-primary mb-8">
+          Passione per<br/><span class="italic">la natura e la cura</span><br/>del territorio.
+        </h2>
+        <div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+          <p>
+            Mi chiamo <strong class="text-on-surface font-semibold">Vincenza Lochi</strong> e sono una guida escursionistica che opera in Toscana, con l'Oasi LIPU di Massaciuccoli come territorio di riferimento. Da anni accompagno visitatori, famiglie e scolaresche alla scoperta di questi luoghi.
+          </p>
+          <p>
+            Credere che ogni angolo di questa zona umida abbia una storia da raccontare è ciò che mi ha spinto a diventare guida. Che si tratti di un airone immobile tra i canneti o del riflesso delle stelle sul lago, ogni uscita è un'esperienza irripetibile.
+          </p>
+          <p>
+            Collaboro con scuole di ogni ordine e grado per progettare laboratori che avvicinino i più giovani alla natura in modo diretto, curioso e rispettoso.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ GALLERY ═══════════════════════════════════════ -->
+<section class="py-32 bg-surface" id="galleria">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
+      <div>
+        <span class="font-label text-xs uppercase tracking-[0.2em] text-outline mb-2 block">Sul campo</span>
+        <h2 class="font-headline text-5xl text-primary">Foto dalle mie uscite</h2>
+      </div>
+    </div>
+
+    <div class="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite1.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite2.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite3.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite4.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite5.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite6.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite7.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite8.jpg"/>
+      <img alt="" class="w-full rounded-xl object-cover editorial-shadow" src="/gallery/uscite/le-mie-uscite9.jpg"/>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT ═══════════════════════════════════════ -->
+<section class="py-32 bg-surface-container-highest" id="contatti">
+  <div class="max-w-5xl mx-auto px-8">
+    <div class="bg-surface rounded-3xl p-12 md:p-20 editorial-shadow border border-white/60 text-center">
+      <div class="max-w-xl mx-auto">
+        <span class="font-label text-xs uppercase tracking-[0.2em] text-outline mb-4 block">Inizia la tua avventura</span>
+        <h2 class="font-headline text-5xl text-primary mb-8 italic">Cominciamo<br/>insieme.</h2>
+        <p class="font-body text-on-surface-variant mb-12 leading-relaxed">
+          Vuoi prenotare un'uscita, chiedere info su un laboratorio scolastico, o semplicemente saperne di più? Scrivimi direttamente su WhatsApp — rispondo subito.
+        </p>
+        <div class="space-y-5 mb-12">
+          <div class="flex items-center gap-4 justify-center">
+            <span class="material-symbols-outlined text-primary">mail</span>
+            <span class="font-label text-sm text-on-surface-variant"><a class="text-primary underline underline-offset-2" href="mailto:vincenzaloki@gmail.com">vincenzaloki@gmail.com</a></span>
+          </div>
+<div class="flex items-center gap-4 justify-center">
+            <span class="material-symbols-outlined text-primary">phone</span>
+            <span class="font-label text-sm text-on-surface-variant"><a class="text-primary underline underline-offset-2" href="tel:+39 333 603 4388">+39 333 603 4388</a></span>
+          </div>
+        </div>
+        <a
+                target="_blank"
+          href="https://wa.me/393336034388"
+          class="inline-flex items-center gap-3 bg-primary hover:bg-primary-container text-on-primary px-10 py-4 rounded-lg font-label text-sm font-bold tracking-widest uppercase shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105"
+        >
+          <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+          Scrivimi su WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+<footer class="bg-stone-100 w-full pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div>
+      <div class="font-['Newsreader'] italic text-lg text-emerald-900 mb-4">Vincenza Lochi</div>
+      <p class="font-['Manrope'] text-sm text-stone-500 leading-relaxed">
+        Guida escursionistica in Toscana. Porto le persone a contatto con la natura — con rispetto, curiosità e la voglia di condividere ciò che amo.
+      </p>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="font-['Manrope'] text-xs uppercase tracking-widest text-emerald-900">Esperienze</span>
+      <a class="text-stone-500 hover:text-emerald-700 transition-colors duration-300 font-['Manrope'] text-sm" href="#esperienze">Giro in Barchino</a>
+      <a class="text-stone-500 hover:text-emerald-700 transition-colors duration-300 font-['Manrope'] text-sm" href="#esperienze">Escursioni Guidate</a>
+      <a class="text-stone-500 hover:text-emerald-700 transition-colors duration-300 font-['Manrope'] text-sm" href="#esperienze">Laboratori Scolastici</a>
+    </div>
+    <div class="flex flex-col gap-4">
+      <span class="font-['Manrope'] text-xs uppercase tracking-widest text-emerald-900">Info</span>
+      <a class="text-stone-500 hover:text-emerald-700 transition-colors duration-300 font-['Manrope'] text-sm" href="/privacy-policy/">Privacy Policy</a>
+      <a class="text-stone-500 hover:text-emerald-700 transition-colors duration-300 font-['Manrope'] text-sm" href="/cookie-policy/">Cookie Policy</a>
+      <a class="text-stone-500 hover:text-emerald-700 transition-colors duration-300 font-['Manrope'] text-sm" href="/credits/">Credits</a>
+
+      <div class="flex gap-4 mt-2">
+        <span class="material-symbols-outlined text-stone-500 hover:text-primary transition-colors cursor-pointer">photo_camera</span>
+        <span class="material-symbols-outlined text-stone-500 hover:text-primary transition-colors cursor-pointer">public</span>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-outline-variant/20">
+    <p class="text-center md:text-left text-xs font-['Manrope'] tracking-widest text-stone-400 uppercase">
+      © 2026 Vincenza Lochi · P.IVA 02734020460 · Lucca, Toscana
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>

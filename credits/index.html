@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Credits</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#154212",
+          "primary-container": "#2d5a27",
+          "on-primary": "#ffffff",
+          "surface": "#fbf9f5",
+          "surface-container-low": "#f5f3ef",
+          "surface-container-highest": "#e4e2de",
+          "on-surface": "#1b1c1a",
+          "on-surface-variant": "#42493e",
+          "outline": "#72796e",
+          "outline-variant": "#c2c9bb",
+          "secondary": "#00677e",
+        },
+        fontFamily: {
+          headline: ["Newsreader"],
+          body: ["Manrope"],
+          label: ["Manrope"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+  h2 { margin-top: 2.5rem; margin-bottom: 0.75rem; }
+  h3 { margin-top: 1.75rem; margin-bottom: 0.5rem; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+
+<!-- Nav -->
+<nav class="fixed top-0 w-full z-50 flex justify-center py-4 px-4">
+  <div class="max-w-5xl w-full glass-nav bg-stone-50/70 rounded-full shadow-xl shadow-stone-900/5 flex justify-between items-center px-8 py-3">
+    <a href="/" class="text-xl font-['Newsreader'] italic tracking-tight text-emerald-900">Vincenza Lochi</a>
+    <a href="/" class="font-['Manrope'] text-xs tracking-widest uppercase text-stone-600 hover:text-emerald-700 transition-colors duration-300">← Torna al sito</a>
+  </div>
+</nav>
+
+<!-- Content -->
+<main class="pt-36 pb-32 px-4">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="font-headline text-5xl text-primary mb-2 leading-tight">Credits</h1>
+
+    <div class="font-body text-on-surface-variant leading-relaxed space-y-6">
+
+      <h2 class="font-headline text-2xl text-primary">Identità Digitale e Contenuti</h2>
+      <p>
+        In un mondo sempre più visivo, la coerenza tra realtà e presenza online è fondamentale. Questo progetto riflette un impegno costante nella comunicazione di qualità e nella valorizzazione dell'immagine digitale.
+
+      </p><p>
+        Digital Strategist & Photographer La realizzazione del sito web, la strategia di comunicazione sui social media e l'intero apparato fotografico sono stati curati da Stefano Gabryel.
+
+      <strong><a class="text-primary underline underline-offset-2" target="_blank" href="https://stefanogabryel.it">Stefano supporta realtà locali nella creazione di un'identità online autentica e professionale</a></strong>, unendo competenze tecniche nello sviluppo web a una sensibilità estetica maturata in anni di fotografia professionale.
+      </p><p>
+        Per collaborazioni o consulenze sull'immagine online: <strong><a class="text-primary underline underline-offset-2" target="_blank" href="https://stefanogabryel.it">stefanogabryel.it</a></strong>
+      </p>
+
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-stone-100 w-full pt-12 pb-8">
+  <div class="max-w-3xl mx-auto px-8 flex flex-col md:flex-row justify-between gap-6">
+    <span class="font-['Newsreader'] italic text-emerald-900">Vincenza Lochi</span>
+    <div class="flex gap-6 font-['Manrope'] text-sm text-stone-500">
+      <a href="/privacy-policy/" class="hover:text-emerald-700 transition-colors">Privacy Policy</a>
+      <a href="/cookie-policy/" class="hover:text-emerald-700 transition-colors">Cookie Policy</a>
+      <a href="/credits/" class="hover:text-emerald-700 transition-colors">Credits</a>
+      <a href="/" class="hover:text-emerald-700 transition-colors">Sito</a>
+    </div>
+  </div>
+  <div class="max-w-3xl mx-auto px-8 mt-8 pt-6 border-t border-stone-200">
+    <p class="text-xs font-['Manrope'] tracking-widest text-stone-400 uppercase">© 2026 Vincenza Lochi · P.IVA 02734020460</p>
+  </div>
+</footer>
+
+</body>
+</html>
